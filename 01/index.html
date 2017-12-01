@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <title>Day #1 - JS Drum Kit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://image.spreadshirtmedia.com/image-server/v1/designs/11269907,width=178,height=178/devil-metal-rock-hand-short-2c.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+  <div class="keys">
+    <div class="keyrow">
+      <div data-key="81" class="key">
+        <kbd>Q</kbd>
+        <span class="sound">Clap</span>
+      </div>
+      <div data-key="87" class="key">
+        <kbd>W</kbd>
+        <span class="sound">HiHat</span>
+      </div>
+      <div data-key="69" class="key">
+        <kbd>E</kbd>
+        <span class="sound">Kick</span>
+      </div>
+    </div>
+    <div class="keyrow">
+      <div data-key="65" class="key">
+        <kbd>A</kbd>
+        <span class="sound">OpenHat</span>
+      </div>
+      <div data-key="83" class="key">
+        <kbd>S</kbd>
+        <span class="sound">Boom</span>
+      </div>
+      <div data-key="68" class="key">
+        <kbd>D</kbd>
+        <span class="sound">Ride</span>
+      </div>
+    </div>
+    <div class="keyrow">
+      <div data-key="90" class="key">
+        <kbd>Z</kbd>
+        <span class="sound">Snare</span>
+      </div>
+      <div data-key="88" class="key">
+        <kbd>X</kbd>
+        <span class="sound">Tom</span>
+      </div>
+      <div data-key="67" class="key">
+        <kbd>C</kbd>
+        <span class="sound">Tink</span>
+    </div>
+    </div>
+    <div class="keyrow advice"><p>Better with QWERTY keyboards 🥁</p></div>
+  </div>
+
+  <audio data-key="81" src="assets/audio/clap.wav"></audio>
+  <audio data-key="87" src="assets/audio/hihat.wav"></audio>
+  <audio data-key="69" src="assets/audio/kick.wav"></audio>
+  <audio data-key="65" src="assets/audio/openhat.wav"></audio>
+  <audio data-key="83" src="assets/audio/boom.wav"></audio>
+  <audio data-key="68" src="assets/audio/ride.wav"></audio>
+  <audio data-key="90" src="assets/audio/snare.wav"></audio>
+  <audio data-key="88" src="assets/audio/tom.wav"></audio>
+  <audio data-key="67" src="assets/audio/tink.wav"></audio>
+
+<script src="assets/js/script.js" charset="utf-8"></script>
+
+</body>
+</html>

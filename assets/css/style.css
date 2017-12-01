@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700|Vollkorn+SC|Permanent+Marker');
+
+html{
+  width: 100%;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url('../img/background.jpg');
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #FFF;
+  text-align: center;
+}
+
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  font-family: 'Permanent Marker', cursive;
+  color: #efda59;
+  text-align: center;
+  letter-spacing: 0.3em;
+  padding: 25px 0;
+  transition: all 0.5s;
+}
+
+header h1 {
+  font-size: 3em !important;
+}
+
+header span {
+  color: #FFF;
+}
+
+.fixed {
+  background-color: #FFF;
+  box-shadow: 0 2px 2px;
+  padding: 10px 0;
+  z-index: 9999;
+}
+
+.fixed h1 {
+  font-size: 2em !important;
+}
+
+.fixed span {
+  color: #000;
+}
+
+/* Main*/
+main {
+  padding: 150px 0 50px;
+  margin : 0 auto;
+}
+
+main a, main a:visited {
+  text-decoration: none;
+  color: #323330;
+  transition: color 0.2s;
+}
+
+main a:hover, main a:active, main a:focus {
+  color: #EFDA59;
+  text-decoration: none;
+}
+
+main .card {
+  margin-top: 10%;
+  text-align: center;
+  color: #323330;
+  overflow: hidden;
+}
+
+main .card .img-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #EFDA59;
+}
+
+main .card img {
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.2s;
+}
+
+main .card img:hover {
+  transform: scale(1.2);
+  opacity: 0.50;
+}
+
+h4 {
+  font-family: 'Vollkorn SC', serif;
+  font-weight: bold;
+}
+
+h4 small {
+  font-family: 'Montserrat', sans-serif;
+  font-variant: small-caps;
+  font-size: 75%;
+}
+
+/*Footer*/
+footer {
+  background-color: #EFDA59;
+  text-align: center;
+  padding: 35px 0;
+  font-variant: small-caps;
+  color: #323330;
+  font-weight: 600;
+}
+
+footer a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.5s
+}
+
+footer a:hover {
+  color: #876;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 768px) {
+  header h1{
+    font-size: 2em !important;
+  }
+
+  main {
+    padding: 95px 0 50px;
+    margin : 0 auto;
+  }
+}
