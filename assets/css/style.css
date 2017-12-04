@@ -131,4 +131,8 @@ footer a:hover {
     padding: 95px 0 50px;
     margin : 0 auto;
   }
+
+  h4 small {
+    display: block;
+  }
 }

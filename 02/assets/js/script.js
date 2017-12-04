@@ -1,13 +1,15 @@
 let sHand = document.getElementById('seconds');
 let mHand = document.getElementById('minutes');
 let hHand = document.getElementById('hours');
+let time = document.getElementById('time');
 
 let setTheDate = function () {
   let date = new Date();
-  let s, sdeg, m, mdeg, h, hdeg;
+  let s, sOnly, sdeg, m, mdeg, h, hdeg;
 
   // Seconds settings
   s = date.getSeconds();
+  sOnly = date.getTime()/1000;
   sdeg = (s/60)*360;
   sHand.style.transform = "rotate(" + sdeg + "deg)"
 
@@ -21,7 +23,10 @@ let setTheDate = function () {
   hdeg = ((h/12)*360) + ((m/60)*30);
   hHand.style.transform = "rotate(" + hdeg + "deg)"
 
-  console.log(h + " : " + m + " : " + s);
+  // Time div
+  time.innerHTML = "Can't read analogic ? It's " + h + " : " + (date.getMinutes()<10?'0':'') + m + " : " + (date.getSeconds()<10?'0':'') + s;
+
+  console.log(h + " : " + (date.getMinutes()<10?'0':'') + m + " : " + (date.getSeconds()<10?'0':'') + s);
 }
 
 setInterval(setTheDate, 1000);
