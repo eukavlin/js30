@@ -76,3 +76,11 @@ body{
   font-family: Montserrat, sans-serif;
   color: #FFF;
 }
+
+@media screen and (max-width:768px) {
+  .clock {
+    background-size: 20em;
+    height: 20em;
+    width: 20em;
+  }
+}
