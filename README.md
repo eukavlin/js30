@@ -1,2 +1,3 @@
-# js30
-My #JAVASCRIPT30 Challenge - Thanks to wesbos
+# #JAVASCRIPT30
+
+My submition to the #JAVASCRIPT30 Challenge - by Wesbos
