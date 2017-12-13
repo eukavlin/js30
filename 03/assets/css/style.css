@@ -1,7 +1,97 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700|Vollkorn+SC|Permanent+Marker');
-
 html, body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --base: #ffc600;
+  --spacing: 5px;
+  --blur: 0;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
+
+.hl {
+  color: var(--base);
+}
+
+
+.slider {
+    -webkit-appearance: none;
+    margin-left: 0.5em;
+    appearance: none;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: var(--base);
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: var(--base);
+    cursor: pointer;
+}
+
+
+
+body {
+  text-align: center;
+  background: #193549;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+h1 {
+  font-weight: 700;
+  margin-top: 0.5em;
+}
+
+.controls {
+  margin-bottom: 50px;
+}
+
+input {
+  width: 100px;
+}
+
+img {
+  max-height: 70vh;
+}
+
+.variation {
+  margin: 0 1em;
+  display: inline-flex;
+  align-items: center;
+}
+
+.variation span {
+  margin-left: 0.5em;
+}
+
+label {
+  margin: 0;
 }

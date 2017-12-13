@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <meta charset="UTF-8">
-  <title>Day #2 - Tik-tok, it's clock</title>
+  <title>Day #3 - Play with variables</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="http://pngimg.com/uploads/clock/clock_PNG6647.png">
+  <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/137490/isolated/lists/5f7250872a7fe197fd076d7cead5b2e4-snow-mountain-climbing-silhouette.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
+
 <body>
+  <h1>Update CSS Variables with <span class='hl'>JS</span></h2>
 
+  <div class="controls">
+    <div class="variation">
+      <label for="spacing">Spacing:</label>
+      <span class="spacing">5px</span>
+      <input id="spacing" type="range" name="spacing" min="1" max="200" value="5" data-sizing="px" class="slider">
+    </div>
+    <div class="variation">
+      <label for="blur">Blur:</label>
+      <span class="blur">0</span>
+      <input id="blur" type="range" name="blur" min="0" max="25" value="0" data-sizing="px" class="slider">
+    </div>
+    <div class="variation">
+      <label for="base">Base Color</label>
+      <span class="base"></span>
+      <input id="base" type="color" name="base" value="#ffc600" class="slider">
+    </div>
+  </div>
 
+  <img src="assets/img/image.jpg">
 
-<script src="assets/js/script.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js" charset="utf-8"></script>
 
 </body>
+
 </html>
