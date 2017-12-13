@@ -21,9 +21,9 @@ body{
   border: 10px solid #000;
   background: url('../img/clock.jpg') fixed;
   background-position: center;
-  background-size: 30em;
-  height: 30em;
-  width: 30em;
+  background-size: 75vmin;
+  height: 75vmin;
+  width: 75vmin;
 }
 
 .hands {
@@ -33,7 +33,6 @@ body{
   bottom: 0;
   left: 0;
   transition: all 0.2s;
-  transition-timing-function: cubic-bezier(0, 3.55, 1, 1.01);
 }
 
 #hours {
@@ -65,11 +64,12 @@ body{
   transform-origin: 50% 80%;
   width: 1%;
   z-index: 8;
+  transition-timing-function: cubic-bezier(0, 3.55, 1, 1.01);
 }
 
 #time {
   position: fixed;
-  bottom: 5em;
+  bottom: 2em;
   left: 0;
   right: 0;
   text-align: center;
@@ -79,8 +79,8 @@ body{
 
 @media screen and (max-width:768px) {
   .clock {
-    background-size: 20em;
-    height: 20em;
-    width: 20em;
+    background-size: 85vmin;
+    height: 85vmin;
+    width: 85vmin;
   }
 }
