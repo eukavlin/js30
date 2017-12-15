@@ -1,0 +1,254 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700|Vollkorn+SC|Permanent+Marker');
+
+/* Reset */
+
+html, body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+}
+
+::-webkit-scrollbar-track{
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: #0ae;
+  background: -moz-linear-gradient(45deg, #ff0000 0%, #ffff00 25%, #05C1FF 50%, #ffff00 75%, #ff0000 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #ff0000), color-stop(25%, #ffff00), color-stop(50%, #05C1FF), color-stop(75%, #ffff00), color-stop(100%, #ff0000)); /* safari4+,chrome */
+  background: -webkit-linear-gradient(45deg, #ff0000 0%, #ffff00 25%, #05C1FF 50%, #ffff00 75%, #ff0000 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(45deg, #ff0000 0%, #ffff00 25%, #05C1FF 50%, #ffff00 75%, #ff0000 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(45deg, #ff0000 0%, #ffff00 25%, #05C1FF 50%, #ffff00 75%, #ff0000 100%); /* ie10+ */
+  background: linear-gradient(45deg, #ff0000 0%, #ffff00 25%, #05C1FF 50%, #ffff00 75%, #ff0000 100%); /* w3c */
+}
+
+/* Main Container */
+
+body {
+  background: url('https://newevolutiondesigns.com/images/freebies/galaxy-wallpaper-36.jpg');
+  background-size: 100%;
+  background-position: center  top;
+  text-align: center;
+  height: 100%;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+#list {
+  margin-top: 5px;
+  width: 100%;
+}
+
+
+h1 {
+  font-weight: 700;
+  margin-top: 0.5em;
+  text-shadow:
+    var(--blue) 1px 1px,
+    var(--blue) 2px 2px,
+    var(--blue) 3px 3px,
+    var(--blue) 4px 4px,
+    var(--blue) 5px 5px,
+    var(--blue) 6px 6px,
+    var(--blue) 7px 7px,
+    var(--blue) 8px 8px,
+    var(--blue) 9px 9px,
+    var(--blue) 10px 10px,
+    var(--blue) 11px 11px,
+    var(--blue) 12px 12px,
+    var(--blue) 13px 13px,
+    var(--blue) 14px 14px,
+    var(--blue) 15px 15px,
+    var(--blue) 16px 16px,
+    var(--blue) 17px 17px,
+    var(--blue) 18px 18px,
+    var(--blue) 19px 19px,
+    var(--blue) 1.5px 1.5px,
+    var(--blue) 2.5px 2.5px,
+    var(--blue) 3.5px 3.5px,
+    var(--blue) 4.5px 4.5px,
+    var(--blue) 5.5px 5.5px,
+    var(--blue) 6.5px 6.5px,
+    var(--blue) 7.5px 7.5px,
+    var(--blue) 8.5px 8.5px,
+    var(--blue) 9.5px 9.5px,
+    var(--blue) 10.5px 10.5px,
+    var(--blue) 11.5px 11.5px,
+    var(--blue) 12.5px 12.5px,
+    var(--blue) 13.5px 13.5px,
+    var(--blue) 14.5px 14.5px,
+    var(--blue) 15.5px 15.5px,
+    var(--blue) 16.5px 16.5px,
+    var(--blue) 17.5px 17.5px,
+    var(--blue) 18.5px 18.5px,
+    var(--blue) 19.5px 19.5px;
+}
+
+/* Sections global */
+
+h4{
+  padding: 20px;
+}
+
+button {
+  width: 100%;
+  background: white;
+  border: none;
+  padding: 0;
+}
+
+button:focus, button:active {
+  outline-color: transparent;
+}
+
+p {
+  white-space: pre-line;
+  margin: 0;
+  padding: 40px 5px ;
+}
+
+/* Inventors */
+
+[data-target="#inventors"] {
+  background: var(--red);
+  color: #FFF;
+}
+
+#inventors {
+  background: #ff9696;
+}
+
+
+#inventors span:nth-child(even){
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+/* Full Names */
+
+[data-target="#fullName"] {
+  background: var(--orange);
+  color: #FFF;
+}
+
+#fullName {
+  background: #ffa560;
+  columns: 3;
+}
+
+/* Ordered */
+
+[data-target="#ordered"] {
+  background: var(--yellow);
+  color: #FFF;
+}
+
+#ordered {
+  background: #ffd048;
+  columns: 2;
+}
+
+#ordered span:nth-child(even){
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+
+/* Combined years */
+
+[data-target="#years"] {
+  background: var(--green);
+  color: #FFF;
+}
+
+#years {
+  background: #5cc974;
+}
+
+
+/* Older to younger */
+
+[data-target="#older"] {
+  background: var(--blue);
+  color: #FFF;
+}
+
+#older {
+  background: #49a1ff;
+}
+
+#older span:nth-child(even){
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+/* People */
+
+[data-target="#people"] {
+  background: var(--indigo);
+  color: #FFF;
+}
+
+#people {
+  background: #935eed;
+  columns: 4;
+}
+
+
+/* Instances */
+
+[data-target="#instance"] {
+  background: var(--pink);
+  color: #FFF;
+}
+
+#instance {
+  background:#ed71a9;
+    text-transform: capitalize;
+}
+
+
+
+
+input {
+  width: 100px;
+}
+
+img {
+  max-height: 70vh;
+}
+
+.variation {
+  margin: 0 1em;
+  display: inline-flex;
+  align-items: center;
+}
+
+.variation span {
+  margin-left: 0.5em;
+}
+
+label {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-size: 200%;
+  }
+  p {
+    columns: 1 !important;
+  }
+}
